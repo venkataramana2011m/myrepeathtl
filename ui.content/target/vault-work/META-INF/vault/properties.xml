@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>repeatHTL - UI content</comment>
+<entry key="createdBy">pavan.kumar.manda</entry>
+<entry key="name">repeatHTL.ui.content</entry>
+<entry key="created">2017-10-11T15:54:39.332+0530</entry>
+<entry key="groupId">repeatHTL</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">repeatHTL</entry>
+<entry key="description">UI content package for repeatHTL</entry>
+<entry key="artifactId">repeatHTL.ui.content</entry>
+<entry key="path">/etc/packages/repeatHTL/repeatHTL.ui.content.zip</entry>
+</properties>

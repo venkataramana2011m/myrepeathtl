@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/com.communities.aem.core.servlets.SimpleUserGroup">
+    <OCD id="com.communities.aem.core.servlets.SimpleUserGroup" name="%com.communities.aem.core.servlets.SimpleUserGroup.name" description="%com.communities.aem.core.servlets.SimpleUserGroup.description">
+        <AD id="sling.servlet.paths" type="String" default="/services/SimpleUserGroup" name="%com.communities.aem.core.servlets.SimpleUserGroup.sling.servlet.paths.name" description="%com.communities.aem.core.servlets.SimpleUserGroup.sling.servlet.paths.description"/>
+        <AD id="label" type="String" default="SimpleUserGroup" name="%com.communities.aem.core.servlets.SimpleUserGroup.label.name" description="%com.communities.aem.core.servlets.SimpleUserGroup.label.description"/>
+    </OCD>
+    <Designate pid="com.communities.aem.core.servlets.SimpleUserGroup">
+        <Object ocdref="com.communities.aem.core.servlets.SimpleUserGroup"/>
+    </Designate>
+</metatype:MetaData>

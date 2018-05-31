@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="nt:unstructured"
+        xtype="tabpanel">
+        <items
+            jcr:primaryType="nt:unstructured"
+            title="Lead"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Text"
+                    name="./jcr:description"
+                    xtype="textarea"/>
+                <userrole
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="UserRole"
+                    name="./userrole"
+                    xtype="pathfield"/>
+                <userpermission
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="UserPermission"
+                    name="./userpermission"
+                    xtype="multifield"/>
+                <usergroup
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="UserGroup"
+                    name="./usergroup"
+                    xtype="pathfield"/>
+            </items>
+        </items>
+    </items>
+</jcr:root>

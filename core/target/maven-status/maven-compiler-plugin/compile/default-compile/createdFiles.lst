@@ -1,0 +1,11 @@
+com\communities\aem\core\constants\MyToolConstants.class
+com\communities\aem\core\listeners\SimpleResourceListener.class
+com\communities\aem\core\services\Useradminservice.class
+com\communities\aem\core\servlets\SimpleServlet.class
+com\communities\aem\core\filters\LoggingFilter.class
+com\communities\aem\core\beanutils\Useradminbean.class
+com\communities\aem\core\models\HelloWorldModel.class
+com\communities\aem\core\servlets\SimpleUserGroup.class
+com\communities\aem\core\package-info.class
+com\communities\aem\core\schedulers\SimpleScheduledTask.class
+com\communities\aem\core\servlets\SimpleUserGroup$SimplePrincipal.class
