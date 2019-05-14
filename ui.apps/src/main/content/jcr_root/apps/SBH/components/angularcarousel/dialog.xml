@@ -17,13 +17,6 @@
                         name="./images"
                         rootPath="/content/dam"
                         xtype="pathfield"/>
-                    <carouselspeed
-                        jcr:primaryType="cq:Widget"
-                        allowBlank="{Boolean}false"
-                        defaultValue="5000"
-                        fieldLabel="Enter the value of the Speed"
-                        name="./cspeed"
-                        xtype="numberfield"/>
                 </items>
             </tab1>
         </items>
