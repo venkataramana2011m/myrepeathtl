@@ -1,0 +1,4 @@
+#base=js
+    angular.min.js
+    angular.js
+    ui-bootstrap-tpls-0.12.1.js
