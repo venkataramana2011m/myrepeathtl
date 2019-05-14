@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Creating the Upload Component and Make it to Preview the Uploaded File in the dialog itself ..........."
+    jcr:primaryType="cq:Component"
+    jcr:title="Upload Component"
+    allowedParents="[*/*parsys]"
+    componentGroup="Innovation"/>

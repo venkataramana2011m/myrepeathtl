@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans|Marvel:400,700,400italic|Exo+2:200,400);
+html,body{margin:0}
+.tabbed-view{width:100%;height:auto;position:relative;display:block;margin:50px auto}
+.tab-container{text-align:left;position:relative;display:block;height:500px;margin:20px 0;padding:0}
+.tab-container .tab-radio{display:none}
+.tab-container .tab{display:block;width:auto;height:30px;float:left;position:relative;top:-5px;color:#fff;text-decoration:none;text-align:center;cursor:pointer;font-family:Marvel, cursive;font-size:16px;line-height:30px;z-index:0;margin:0;padding:3px 10px}
+.tab-container .tab-radio:checked ~ .tab,.tab-container .tab-radio:active ~ .tab{z-index:100}
+.tab-container .tab-radio:checked ~ .tab{width:auto;color:#000}
+.tab-container .tab-radio:checked ~ .tab:before{content:""}
+.tab-container .tab-page{visibility:hidden;z-index:50;display:block;position:absolute;top:30px;left:0;float:left;-moz-transition:visibility 0 ease-out .3s;-ms-transition:visibility 0 ease-out .3s;-o-transition:visibility 0 ease-out .3s;-webkit-transition:visibility 0 ease-out .3s;transition:visibility 0 ease-out .3s;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);box-shadow:0 1px 4px rgba(0,0,0,0.3);height:auto;margin:0;padding:20px 20px 30px}
+.tab-container.rounded .tab-page{-webkit-border-top-right-radius:10px;-moz-border-top-right-radius:10px;border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-bottom-right-radius:10px;border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;-moz-border-bottom-left-radius:10px;border-bottom-left-radius:10px}
+.tab-container .tab-page h3,.tab-container .tab-page h4{font-family:'Exo 2', sans-serif;margin:0 0 10px}
+.tab-container .tab-page h3{font-size:40px;font-weight:200}
+.tab-container .tab-page h4{font-size:21px;font-weight:400}
+.tab-container .tab-radio:checked ~ .tab-page{visibility:visible}
+.tab-container .tab-page > *{-moz-opacity:0;-ms-opacity:0;-o-opacity:0;-webkit-opacity:0;opacity:0;-moz-transition:opacity .3s ease-out 0;-ms-transition:opacity .3s ease-out 0;-o-transition:opacity .3s ease-out 0;-webkit-transition:opacity .3s ease-out 0;transition:opacity .3s ease-out 0}
+.tab-container .tab-radio:checked ~ .tab-page > *{-moz-opacity:1;-ms-opacity:1;-o-opacity:1;-webkit-opacity:1;opacity:1;-moz-transition:opacity .3s ease-in .15s;-ms-transition:opacity .3s ease-in .15s;-o-transition:opacity .3s ease-in .15s;-webkit-transition:opacity .3s ease-in .15s;transition:opacity .3s ease-in .15s}
+.tab-container article{font-family:'Alegreya Sans', sans-serif}
+.tab-container .tab-radio ~ .tab:after{position:absolute;display:block;z-index:200;width:0;height:0;border-color:#fff transparent transparent;border-style:solid;border-width:50px 50px 0 0}
+.tab-container .tab-radio ~ .tab{background-color:#2980b9}
+.tab-container article p{line-height:140%}
+.tab-container.grey article p{color:#333}
+.tab-container.grey label,.tab-container .tab-radio:checked ~ .tab,.tab-container.grey .tab-radio:active ~ .tab,.tab-container.grey article,.tab-container.grey .tab:hover{background:#bdc3c7;color:#FFF}
+.tab-container.blue label,.tab-container.blue .tab-radio:checked ~ .tab,.tab-container.blue .tab-radio:active ~ .tab,.tab-container.blue article,.tab-container.blue .tab:hover,.tab-container.orange label,.tab-container.orange .tab-radio:checked ~ .tab,.tab-container.orange .tab-radio:active ~ .tab,.tab-container.orange article,.tab-container.orange .tab:hover{background:#3498db;color:#FFF}
+.tab-container.blue article p,.tab-container.orange article p,.tab-container.green article p,.tab-container.dark article p,.tab-container.pink article p{color:#FFF}
+.tab-container.green label,.tab-container.green .tab-radio:checked ~ .tab,.tab-container.green .tab-radio:active ~ .tab,.tab-container.green article,.tab-container.green .tab:hover{background:#1abc9c;color:#FFF}
+.tab-container.dark label,.tab-container.dark .tab-radio:checked ~ .tab,.tab-container.dark .tab-radio:active ~ .tab,.tab-container.dark article,.tab-container.dark .tab:hover{background:#050505;color:#FFF}
+.tab-container.pink label,.tab-container.pink .tab-radio:checked ~ .tab,.tab-container.pink .tab-radio:active ~ .tab,.tab-container.pink article,.tab-container.pink .tab:hover{background:#ff838b;color:#FFF}

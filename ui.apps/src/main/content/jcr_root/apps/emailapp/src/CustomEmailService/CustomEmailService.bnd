@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.emailapp.CustomEmailService
+# Include-Resource: 
+Bundle-Name: CustomEmailService
+Bundle-Description: 
+Bundle-SymbolicName: CustomEmailService
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.emailapp.CustomEmailService.Activator

@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.SBH.Majoris
+# Include-Resource: 
+Bundle-Name: SendMail
+Bundle-Description: 
+Bundle-SymbolicName: com.SBH.Majoris.SendMail
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.SBH.Majoris.Activator

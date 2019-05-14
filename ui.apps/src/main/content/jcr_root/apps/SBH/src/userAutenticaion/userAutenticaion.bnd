@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.SBH
+# Include-Resource: 
+Bundle-Name: User Autenticaion
+Bundle-Description: creating the User Autenticaion for the SBH
+Bundle-SymbolicName: userAutenticaion
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.SBH.Activator

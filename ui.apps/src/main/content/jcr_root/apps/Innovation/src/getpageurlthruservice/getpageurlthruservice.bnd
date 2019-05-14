@@ -1,0 +1,9 @@
+Export-Package: *
+Import-Package: *
+Private-Package: com.Innvation.getpageurlthruservice
+# Include-Resource: 
+Bundle-Name: getpageurlthruservice
+Bundle-Description: 
+Bundle-SymbolicName: getpageurlthruservice
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.Innvation.getpageurlthruservice.Activator

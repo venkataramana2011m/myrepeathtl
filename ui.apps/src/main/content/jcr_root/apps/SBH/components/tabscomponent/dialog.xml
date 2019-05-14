@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="350"
+    title="Multi Field"
+    width="480"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:TabPanel"
+        height="300"
+        minHeight="300">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Personal Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tabStyle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        defaultValue="horizontal"
+                        fieldLabel="Tab Style"
+                        name="./tabStyle"
+                        type="select"
+                        value="horizontal"
+                        width="150"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <horizontal
+                                jcr:primaryType="nt:unstructured"
+                                text="Horizontal (default)"
+                                value="horizontal"/>
+                            <horizontalforHotelInfo
+                                jcr:primaryType="nt:unstructured"
+                                text="Horizontal (For Hotel Info)"
+                                value="hotelinfo"/>
+                            <vertical
+                                jcr:primaryType="nt:unstructured"
+                                text="Vertical"
+                                value="vertical"/>
+                        </options>
+                    </tabStyle>
+                    <linkEntries
+                        jcr:primaryType="cq:Widget"
+                        baseName="tab_"
+                        fieldDescription="Click on the &amp;quot;+&amp;quot; button to add a link"
+                        fieldLabel="Tabs"
+                        name="./tabEntries">
+                        <fieldConfigs
+                            jcr:primaryType="cq:WidgetCollection"
+                            xtype="multifield">
+                            <tabText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                defaultValue="Tab Name"
+                                fieldLabel="Tab Name"
+                                name="tabName"
+                                width="180"
+                                xtype="texfied"/>
+                            <tabAltText
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}true"
+                                defaultValue="Alt Text"
+                                fieldLabel="Alt Text"
+                                name="tabAltText"
+                                width="180"
+                                xtype="textfield"/>
+                            <resType
+                                jcr:primaryType="cq:Widget"
+                                ignoreData="{Boolean}true"
+                                name="sling:resourceType"
+                                value="lq/lq-com/components/global/mmfield"
+                                xtype="hidden"/>
+                        </fieldConfigs>
+                    </linkEntries>
+                    <EName
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter The Name of the User"
+                        fieldLabel="Enter The Name"
+                        name="./ename"
+                        xtype="textfield"/>
+                    <Edob
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="now"
+                        fieldDescription="Select the date in the &quot;dd/MM/yyyy&quot;"
+                        fieldLabel="Enter the Date of Birth"
+                        hideTime="{Boolean}true"
+                        name="./edob"
+                        xtype="datetime"/>
+                    <tabtitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Title for the Tab"
+                        fieldLabel="Enter the Title for the Tab"
+                        name="./tabtitle"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Educational Details">
+                <items jcr:primaryType="cq:WidgetCollection"/>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

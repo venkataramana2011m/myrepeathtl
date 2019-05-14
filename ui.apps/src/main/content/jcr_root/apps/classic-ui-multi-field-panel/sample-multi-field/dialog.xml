@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Multi Field"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Personal Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <map
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./map"
+                        title="Map"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <product-year-value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="year"
+                                    fieldLabel="Year"
+                                    width="60"
+                                    xtype="textfield"/>
+                                <product-price-value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="price"
+                                    fieldLabel="Price"
+                                    width="60"
+                                    xtype="textfield"/>
+                                <product-version-value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="version"
+                                    fieldLabel="Path to Version"
+                                    xtype="pathfield"/>
+                                <product-lowStock-value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="lowStock"
+                                    fieldLabel="Low Stock ?"
+                                    width="25"
+                                    xtype="checkbox"/>
+                                <product-year-description
+                                    jcr:primaryType="cq:Widget"
+                                    dName="description"
+                                    editElementQuery="div[class=&quot;text&quot;]"
+                                    fieldLabel="Description"
+                                    hideLabel="{Boolean}true"
+                                    name="./text"
+                                    xtype="richtext">
+                                    <rtePlugins jcr:primaryType="nt:unstructured">
+                                        <links jcr:primaryType="nt:unstructured">
+                                            <linkDialogConfig
+                                                jcr:primaryType="nt:unstructured"
+                                                height="{Long}316">
+                                                <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                                    <linkAdvanced
+                                                        jcr:primaryType="cq:Widget"
+                                                        collapsed="{Boolean}true"
+                                                        collapsible="{Boolean}true"
+                                                        inputValue="advanced"
+                                                        name="./linkdialog/cq:adhocLinkTrackingTab"
+                                                        title="Link tracking"
+                                                        xtype="dialogfieldset">
+                                                        <items jcr:primaryType="cq:WidgetCollection">
+                                                            <enable
+                                                                jcr:primaryType="nt:unstructured"
+                                                                attribute="enabletracking"
+                                                                fieldDescription="override analytics framework settings"
+                                                                fieldLabel="Custom link tracking"
+                                                                name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                                xtype="checkbox">
+                                                                <listeners
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                                            </enable>
+                                                            <events
+                                                                jcr:primaryType="nt:unstructured"
+                                                                attribute="adhocevents"
+                                                                fieldDescription="e.g.: event2, event7"
+                                                                fieldLabel="Include SiteCatalyst events"
+                                                                name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                                xtype="textfield"/>
+                                                            <evars
+                                                                jcr:primaryType="nt:unstructured"
+                                                                attribute="adhocevars"
+                                                                fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                                fieldLabel="Include SiteCatalyst variables"
+                                                                name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                                xtype="textfield"/>
+                                                        </items>
+                                                    </linkAdvanced>
+                                                </linkAttributes>
+                                            </linkDialogConfig>
+                                        </links>
+                                    </rtePlugins>
+                                </product-year-description>
+                                <richFlag
+                                    jcr:primaryType="cq:Widget"
+                                    ignoreData="{Boolean}true"
+                                    name="./textIsRich"
+                                    value="true"
+                                    xtype="hidden"/>
+                            </items>
+                        </fieldConfig>
+                    </map>
+                </items>
+            </tab1>
+            <tab2 jcr:primaryType="cq:Panel"/>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,154 @@
+.crsl-nav .previous {
+width: 17px;
+height: 33px;
+display: block;
+position: absolute;
+top: 0px;
+right: 35px;
+background: url(/content/dam/Carpenter_Guy/arrow-carousel-nav.png) 0px 0px no-repeat ;
+}
+
+.crsl-nav .next {
+width: 17px;
+height: 33px;
+display: block;
+position: absolute;
+top: 0px;
+right: 0px;
+background: url(/content/dam/Carpenter_Guy/arrow-carousel-nav.png) 0px -33px no-repeat ;
+}
+
+.crsl-nav {
+width: 100%;
+position: relative;
+z-index: 1;
+
+}
+
+*, *:before, *:after {
+margin: 0;
+padding: 0;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+div {
+display: block;
+}
+body {
+font-family: SlateProBk,Arial,Helvetica,sans-serif;
+line-height: 1;
+color: #000;
+cursor: default;
+font-size: 100%;
+}
+.crsl-nav a {
+border: 0;
+outline: 0;
+text-decoration: none;
+font-weight: normal;
+color: #0080b2;
+}
+.crsl-nav a:-webkit-any-link {
+color: -webkit-link;
+text-decoration: underline;
+cursor: auto;
+}
+
+
+#carousel {
+	width:750px;
+	height:250px;	
+	margin:0 0 0 0;
+	overflow:hidden;
+border-radius: 6px; border: 1px solid gray; box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+#slides {
+	overflow:show;
+	/* fix ie overflow issue */
+	position:relative;
+	width:2340px;
+	height:250px;
+
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;	
+	width:2340px;
+
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width:250px;
+	height:250px;	
+	float:left;
+	display:inline;
+}
+
+
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:transperent; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	background:url(./arrow.gif) 0 -31px no-repeat; 
+}
+
+a#prev:hover {
+	background:url(./arrow.gif) 0 0 no-repeat;
+}
+
+a#next {
+	background:url(./arrow.gif) -32px -31px no-repeat; 
+}
+
+a#next:hover {
+	background:url(./arrow.gif) -32px 0 no-repeat;
+}
+
+.clear {clear:both}
+
+div.background
+  {
+  width:500px;
+  height:250px;
+  background:url('/content/dam/Carpenter_Guy/1.jpeg');
+ border-radius: 6px; border: 1px solid gray; box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+  }
+div.transbox
+  {
+  width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  }
+div.transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
