@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <bubbletexteditor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Text"
+                        name="./bubbletext"
+                        xtype="richtext"/>
+                    <addtriangle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the checkbox to add the Triangle to the Bubble Text Area"
+                        fieldLabel="Add Triangle to Bubble Text"
+                        name="./addtriangle"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <position
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Please select the position of the triangle in the bubble text area"
+                        fieldLabel="Select the position of Triangle"
+                        name="./triangleposition"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <top-center
+                                jcr:primaryType="nt:unstructured"
+                                text="top-center"
+                                value="top-center"/>
+                        </options>
+                    </position>
+                    <roundness
+                        jcr:primaryType="cq:Widget"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <zero
+                                jcr:primaryType="nt:unstructured"
+                                text="Zero"
+                                value="0"/>
+                            <full
+                                jcr:primaryType="nt:unstructured"
+                                text="Full"
+                                value="100"/>
+                        </options>
+                    </roundness>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
