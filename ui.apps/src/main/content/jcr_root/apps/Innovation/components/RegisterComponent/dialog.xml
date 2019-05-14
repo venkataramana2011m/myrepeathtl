@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="RegDialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Personal Information">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <fname jcr:primaryType="cq:Widget"/>
+                    <lname jcr:primaryType="cq:Widget"/>
+                    <address jcr:primaryType="cq:Widget"/>
+                    <gender
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Gender"
+                        name="./gender"
+                        type="radiogroup"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <male
+                                jcr:primaryType="cq:Widget"
+                                text="Male"
+                                value="male"/>
+                            <female
+                                jcr:primaryType="cq:Widget"
+                                text="Female"
+                                value="female"/>
+                            <transgender
+                                jcr:primaryType="cq:Widget"
+                                text="Transgender"
+                                value="transgender"/>
+                        </options>
+                    </gender>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Educational Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Qualification
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Qualification"
+                        name="./qualification"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <o1
+                                jcr:primaryType="nt:unstructured"
+                                text="(default)"
+                                value=""/>
+                            <o2
+                                jcr:primaryType="nt:unstructured"
+                                text="B.Tech"
+                                value="btech"/>
+                            <o3
+                                jcr:primaryType="nt:unstructured"
+                                text="BE"
+                                value="be"/>
+                            <o4
+                                jcr:primaryType="nt:unstructured"
+                                text="B Sc"
+                                value="bsc"/>
+                        </options>
+                    </Qualification>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,7 @@
+Export-Package: com.Innovation
+Private-Package: com.Innovation.impl
+Bundle-Name: Sample project Innovation
+Bundle-Description: Contains the Innovation sample bundle
+Bundle-SymbolicName: com.Innovation
+Bundle-Version: 1.0-SNAPSHOT
+Bundle-Activator: com.Innovation.impl.Activator

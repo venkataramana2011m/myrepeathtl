@@ -1,0 +1,9 @@
+Export-Package: *
+Import-Package: *
+Private-Package: *
+# Include-Resource: 
+Bundle-Name: GetOverViewComponentService
+Bundle-Description: creating the GetOverViewComponentService
+Bundle-SymbolicName: GetOverViewComponentService
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.Innovation.Activator

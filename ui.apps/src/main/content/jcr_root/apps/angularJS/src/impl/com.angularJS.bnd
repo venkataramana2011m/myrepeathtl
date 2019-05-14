@@ -1,0 +1,7 @@
+Export-Package: com.angularJS
+Private-Package: com.angularJS.impl
+Bundle-Name: Sample project angularJS
+Bundle-Description: Contains the angularJS sample bundle
+Bundle-SymbolicName: com.angularJS
+Bundle-Version: 1.0-SNAPSHOT
+Bundle-Activator: com.angularJS.impl.Activator

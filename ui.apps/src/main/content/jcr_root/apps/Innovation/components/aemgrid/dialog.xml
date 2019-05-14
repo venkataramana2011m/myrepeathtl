@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="aemgrid"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="&#xa;Tree Overview">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <size
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Gridview Dimensions"
+                        xtype="sizefield"/>
+                    <docked
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Dock window"
+                        name="./docked"
+                        type="radio"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <v1
+                                jcr:primaryType="nt:unstructured"
+                                text="Yes"
+                                value="true"/>
+                            <v2
+                                jcr:primaryType="nt:unstructured"
+                                text="No"
+                                value="false"/>
+                        </options>
+                    </docked>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

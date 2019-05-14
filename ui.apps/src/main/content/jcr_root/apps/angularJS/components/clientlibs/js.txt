@@ -1,0 +1,5 @@
+#base=js
+angular.js
+ui-bootstrap-tpls.min.js
+createtabs.js
+ui-bootstrap.min.js

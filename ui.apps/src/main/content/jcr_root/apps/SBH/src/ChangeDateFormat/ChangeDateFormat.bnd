@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.SBH
+# Include-Resource: 
+Bundle-Name: Change Date Format
+Bundle-Description: Change Date Format based on the country
+Bundle-SymbolicName: ChangeDateFormat
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.SBH.Activator

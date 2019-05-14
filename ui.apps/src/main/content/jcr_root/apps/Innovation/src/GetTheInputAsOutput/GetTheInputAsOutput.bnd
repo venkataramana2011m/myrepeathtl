@@ -1,0 +1,9 @@
+Export-Package: *
+Import-Package: *
+Private-Package: com.GetTheInputAsOutput
+Include-Resource: 
+Bundle-Name: GetTheInputAsOutput
+Bundle-Description: Creating the Service to set the Name to say hello
+Bundle-SymbolicName: GetTheInputAsOutput
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.GetTheInputAsOutput.Activator

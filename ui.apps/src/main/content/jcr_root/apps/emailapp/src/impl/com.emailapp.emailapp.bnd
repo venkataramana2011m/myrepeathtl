@@ -1,0 +1,7 @@
+Export-Package: com.emailapp.emailapp
+Private-Package: com.emailapp.emailapp.impl
+Bundle-Name: Sample project emailapp
+Bundle-Description: Contains the emailapp sample bundle
+Bundle-SymbolicName: com.emailapp.emailapp
+Bundle-Version: 1.0-SNAPSHOT
+Bundle-Activator: com.emailapp.emailapp.impl.Activator

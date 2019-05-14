@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.test.demobundle
+# Include-Resource: 
+Bundle-Name: DemoBundle
+Bundle-Description: 
+Bundle-SymbolicName: com.test.demobundle
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.test.demobundle.Activator

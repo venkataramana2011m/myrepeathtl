@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.SBH.cqtabstag
+# Include-Resource: 
+Bundle-Name: cq tabs tag
+Bundle-Description: creating the custom tag library for the tabs creation of the project SBH
+Bundle-SymbolicName: cqtabstag
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.SBH.cqtabstag.Activator

@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.Innovation.src.mail
+# Include-Resource: 
+Bundle-Name: mailingService
+Bundle-Description: Creating the Mailing Service
+Bundle-SymbolicName: com.Innovation.src.mail.mailingService
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.Innovation.src.mail.Activator

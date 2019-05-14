@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="upload"
+    value="upload"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <UploadCsv
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select the File"
+                        name="./uploadcsv"
+                        xtype="pathfield"/>
+                    <loadData
+                        jcr:primaryType="cq:Widget"
+                        name="./loaddata"
+                        text="Load"
+                        xtype="button">
+                        <listener jcr:primaryType="nt:unstructured"/>
+                    </loadData>
+                    <Preview
+                        jcr:primaryType="cq:Widget"
+                        name="./preview"
+                        title="Uploaded File Preview"
+                        xtype="panel">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <filePreview
+                                jcr:primaryType="cq:Widget"
+                                autoscroll="{Boolean}true"
+                                html=""
+                                name="./filepreview"
+                                width="500px"
+                                xtype="thumbnail"/>
+                        </items>
+                    </Preview>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

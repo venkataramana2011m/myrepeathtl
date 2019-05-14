@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="diaog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Title &amp; Price Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <itemTitle
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the name of the item here"
+                        fieldLabel="Enter Title of the Item"
+                        name="./itemTitle"
+                        xtype="textfield"/>
+                    <itemPrice
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Specify the Price of the item like 'Rs. 29.3 - 36.5 Lacs'"
+                        fieldLabel="Enter the Price of the Item"
+                        name="./itemPrice"
+                        xtype="textfield"/>
+                    <itemEntryTime
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="now"
+                        fieldLabel="Select the Entry Date"
+                        hideTime="{Boolean}true"
+                        name="./date"
+                        xtype="datetime"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                cropParameter="./imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                mapParameter="./imageMap"
+                name="./file"
+                requestSuffix=".img.png"
+                rotateParameter="./imageRotate"
+                title="Image"
+                xtype="html5smartimage"/>
+        </items>
+    </items>
+</jcr:root>

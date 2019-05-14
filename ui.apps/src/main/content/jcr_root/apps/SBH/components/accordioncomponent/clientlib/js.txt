@@ -1,0 +1,4 @@
+#base=.
+accordion.js
+jquery-1.9.1.js
+jquery-ui.js
